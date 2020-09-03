@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "gamify-web"
+    }
+  },
+  "defaultProject": "gamify-web",
+  "cli": {
+    "analytics": false
+  }
 }
