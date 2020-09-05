@@ -1,0 +1,25 @@
+.gm-main-nav {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.gm-sidebar-nav {
+  height: calc(100vh - 3.5rem);
+}
+
+.gm-sidebar-nav h6 span,
+.gm-sidebar-nav h6 svg {
+  cursor: pointer;
+}
+
+.gm-sidebar-nav h6:focus,
+.gm-sidebar-nav span:focus{
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .gm-mobile-nav {
+    display: none;
+  }
+}
+
