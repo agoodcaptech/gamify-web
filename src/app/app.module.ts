@@ -6,6 +6,7 @@ import {ActivityComponent} from './activity/activity.component';
 import {ChallengeComponent} from './challenge/challenge.component';
 import {AppRoutingModule} from './app-routing.module';
 import {HomeComponent} from './home/home.component';
+import {ChartsModule} from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -14,10 +15,11 @@ import {HomeComponent} from './home/home.component';
     ChallengeComponent,
     HomeComponent
   ],
-  imports: [
-    AppRoutingModule,
-    BrowserModule
-  ],
+    imports: [
+        AppRoutingModule,
+        BrowserModule,
+        ChartsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
