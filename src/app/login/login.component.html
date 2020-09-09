@@ -1,0 +1,20 @@
+<div class="gm-login-page bg-light">
+  <form [formGroup]="form" class="text-center">
+    <svg width="72px" height="72px" viewBox="0 0 16 16" class="bi bi-arrow-up-right-square-fill mb-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.879 10.828a.5.5 0 1 1-.707-.707l4.096-4.096H6.5a.5.5 0 0 1 0-1h3.975a.5.5 0 0 1 .5.5V9.5a.5.5 0 0 1-1 0V6.732l-4.096 4.096z"/></svg>
+    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+    <div class="d-flex justify-content-center">
+      <div class="gm-form-div">
+        <div class="form-group">
+          <label for="inputUsername" class="sr-only">Username</label>
+          <input type="text" id="inputUsername" class="form-control form-control-lg" placeholder="Username" formControlName="username">
+        </div>
+        <div class="form-group">
+          <label for="inputPassword" class="sr-only">Password</label>
+          <input type="password" id="inputPassword" class="form-control form-control-lg" placeholder="Password" formControlName="password">
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" (click)="handleLogin()">Sign in</button>
+        <p class="mt-5 mb-3 text-muted">© 2020</p>
+      </div>
+    </div>
+  </form>
+</div>

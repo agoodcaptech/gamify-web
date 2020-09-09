@@ -7,20 +7,29 @@ import {ChallengeComponent} from './challenge/challenge.component';
 import {AppRoutingModule} from './app-routing.module';
 import {HomeComponent} from './home/home.component';
 import {ChartsModule} from 'ng2-charts';
+import { LoginComponent } from './login/login.component';
+import { NavContainer } from './navbar/nav-container.component';
+import {ReactiveFormsModule} from '@angular/forms';
+import {AuthGuardService} from './auth-guard.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     ActivityComponent,
     ChallengeComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent,
+    NavContainer
   ],
-    imports: [
-        AppRoutingModule,
-        BrowserModule,
-        ChartsModule
-    ],
-  providers: [],
+  imports: [
+    AppRoutingModule,
+    BrowserModule,
+    ChartsModule,
+    ReactiveFormsModule
+  ],
+  providers: [
+    AuthGuardService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

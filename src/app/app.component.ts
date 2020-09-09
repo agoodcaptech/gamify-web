@@ -1,4 +1,5 @@
-import {Component} from '@angular/core';
+import {AfterContentInit, AfterViewChecked, AfterViewInit, Component, OnInit} from '@angular/core';
+import {ActivatedRoute, Router, RouterStateSnapshot} from '@angular/router';
 
 @Component({
   selector: 'app-root',

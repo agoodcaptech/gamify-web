@@ -1,0 +1,13 @@
+.gm-login-page {
+  height: 100vh;
+}
+
+.gm-login-page form {
+  padding-top: 20vh;
+}
+
+.gm-login-page .gm-form-div {
+  width: 400px;
+  max-width: 100%;
+}
+
